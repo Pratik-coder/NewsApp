@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayoutBottomSheet"
+    android:padding="@dimen/dimen_10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_browsenews"
+        android:textColor="@color/lightPurpleBlue"
+        android:textSize="@dimen/dimen_25sp"/>
+
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_15dp">
+
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonOld"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_old"
+            android:textColor="@color/lightPurpleBlue"
+            android:background="@null"
+            android:button="@null"
+            android:drawableStart="@drawable/custom_radio"
+            android:drawablePadding="@dimen/dimen_15dp"/>
+
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/radioButtonLatest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_latest"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:textColor="@color/lightPurpleBlue"
+            android:background="@null"
+            android:button="@null"
+            android:drawableStart="@drawable/custom_radio"
+            android:drawablePadding="@dimen/dimen_15dp"/>
+
+
+
+    </RadioGroup>
+
+</LinearLayout>
